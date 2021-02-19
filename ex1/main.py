@@ -36,12 +36,10 @@ def p2(n):
         return z
 
 print(f2(50,64))
-# def f3(n):
+def f3(n):
+    if(n == 0):
+        return 7
+    else:
+        return abs(f3(n-1)) + math.tan(f3(n-1))
 
-#     if(n > 0):
-#         y = abs(f3(n-1)) + math.tan(f3(n-1))
-#     else:
-#         return y
-#
-# print(f3(7))
-#
+print(f3(7))
